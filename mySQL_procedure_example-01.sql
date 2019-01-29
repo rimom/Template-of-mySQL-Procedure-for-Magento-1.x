@@ -52,7 +52,7 @@ CREATE PROCEDURE deleteTestVouchers()
         );
     SET @cntr = @cntr + ROW_COUNT();
 
-    -- Save row count of the table mage_voucher_list_backup_2018_10_01
+    -- Save row count of the table mage_voucher_list_backup_2018_09_01
     INSERT INTO Log (TableName, LogDate, RowCountAffected, Description)
       SELECT
         'mage_voucher_list_backup_2018_09_01' as TableName,
