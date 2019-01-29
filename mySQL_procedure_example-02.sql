@@ -82,7 +82,7 @@ DROP PROCEDURE doSetClassTaxId;
 # WHERE attribute_code = 'tax_class_id';
 #
 # UPDATE mage_catalog_product_entity_int AS target
-#   INNER JOIN mage_catalog_product_entity_int_backup_14_August_2018 AS source
+#   INNER JOIN mage_catalog_product_entity_int_backup_01_October_2018 AS source
 #     ON target.value_id = source.value_id
 # SET target.value = source.value
 # WHERE source.value_id = target.value_id
