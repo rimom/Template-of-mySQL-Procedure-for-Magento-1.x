@@ -58,7 +58,7 @@ CREATE PROCEDURE deleteTestVouchers()
         'mage_voucher_list_backup_2018_09_01' as TableName,
         now()                                 as LogDate,
         IFNULL(@cntr, 0),
-        'ROWCOUNT BACKED-UP'                  as Description;
+        'LOG BACKED-UP'                       as Description;
     SET @cntr = 0;
 
     -- Begin of my main operation --------------------------------|
@@ -87,7 +87,7 @@ CREATE PROCEDURE deleteTestVouchers()
         'mage_voucher_list' as TableName,
         now()               as LogDate,
         IFNULL(@cntr, 0),
-        'Log deleted'       as Description;
+        'LOG DELETED'       as Description;
     SET @cntr = 0;
 
     COMMIT;
